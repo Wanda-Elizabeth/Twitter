@@ -10,7 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,8 +20,8 @@
         app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/imgTweet"
@@ -80,7 +80,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imgTweet"
                 app:layout_constraintTop_toBottomOf="@+id/tvWords"
-                app:layout_constraintVertical_bias="0.19"
+                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/ic_comment__1_" />
 
             <ImageView
@@ -122,10 +122,10 @@
                 android:layout_height="18dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="23dp"
-                android:text="650"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/imgRetweet"
-                app:layout_constraintTop_toBottomOf="@+id/tvWords" />
+                app:layout_constraintTop_toBottomOf="@+id/tvWords"
+                tools:text="650" />
 
             <TextView
                 android:id="@+id/tvNum2"
@@ -133,9 +133,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="24dp"
-                android:text="890"
                 app:layout_constraintStart_toEndOf="@+id/imgReact"
-                app:layout_constraintTop_toBottomOf="@+id/tvWords" />
+                app:layout_constraintTop_toBottomOf="@+id/tvWords"
+                tools:text="890" />
 
             <TextView
                 android:id="@+id/tvNum3"
